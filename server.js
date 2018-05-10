@@ -4,6 +4,7 @@ const webpackDevMiddleware = require('webpack-dev-middleware');
 
 const app = express();
 const config = require('./webpack.prod.js')
+const compiler = webpack(config);
 
 app.use(webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath
