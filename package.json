@@ -9,7 +9,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack -p --config webpack.prod.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "author": "",
   "license": "ISC",
