@@ -9,7 +9,7 @@ app.use(webpackDevMiddleware(compiler, {
     publicPath: config.output.publicPath
 }));
 
-app.set('port',' process.env.PORT || 8888')
+app.set('port', process.env.PORT || 8888)
 
 app.listen(app.get('port'), function() {
     console.log('Listening on port 3000')
