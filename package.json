@@ -9,6 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "build": "webpack -p --config webpack.prod.js",
+    "dev": "webpack-dev-server --open --config webpack.dev.js",
     "postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
   },
   "author": "",
