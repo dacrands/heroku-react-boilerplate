@@ -1,12 +1,20 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './components/App';
+import Menu from './components/Menu';
 import './styles/main.css'
-console.log('It worked');
 
-function component() {
-    var element = document.createElement('div');
+const title = 'My Minimal React Webpack Babel Setup';
 
-    element.innerHTML = "It works";
-    element.classList.add('hello');
-    return element;
-}
+let app = document.createElement('div');
+app.id = "app"
+document.querySelector('body').appendChild(app);
 
-document.body.appendChild(component());
+ReactDOM.render(
+  <div>
+    <Menu />
+    <App />
+    
+  </div>,
+  document.getElementById('app')
+);
